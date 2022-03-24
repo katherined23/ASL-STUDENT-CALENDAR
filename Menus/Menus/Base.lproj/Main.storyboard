@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Menus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wn-v2-mUH">
+                                <rect key="frame" x="105.91954022988523" y="394" width="200.00000000000006" height="31.000000000000014"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MY 8 DAY SCHEDULE"/>
+                                <connections>
+                                    <action selector="SchedulePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ICL-fw-3UE"/>
+                                    <segue destination="jJx-7H-fAc" kind="show" id="dZB-9A-2XI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo4-Fx-Cps">
+                                <rect key="frame" x="105.91954022988523" y="235" width="200.00000000000006" height="31.000000000000018"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="HOME"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzA-QF-jz3">
+                                <rect key="frame" x="105.91954022988523" y="291" width="200.00000000000006" height="30.999999999999904"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GRADES"/>
+                                <connections>
+                                    <action selector="GradesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MMs-pS-yTK"/>
+                                    <segue destination="nU8-H0-uTv" kind="show" id="SU2-6x-ACR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYj-6r-EVg">
+                                <rect key="frame" x="105.91954022988523" y="343" width="200.00000000000006" height="31.000000000000028"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="ATTENDANCE"/>
+                                <connections>
+                                    <action selector="AttendencePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u6m-nI-U5O"/>
+                                    <segue destination="4mS-Zn-651" kind="show" id="Dhl-Ti-gx7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MENU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Xs-Nv-raB">
+                                <rect key="frame" x="134.83308759144484" y="117" width="140.99999999999997" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K1O-cp-yYd"/>
+                    <connections>
+                        <outlet property="gradesPressed" destination="uzA-QF-jz3" id="6VJ-Yp-cuz"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="87" y="82"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V5X-Te-IkX">
+            <objects>
+                <viewController id="nU8-H0-uTv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruP-eX-cnQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GRADES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YpL-PI-m3A">
+                                <rect key="frame" x="40" y="40" width="66" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lm-F3-O84">
+                                <rect key="frame" x="40" y="760" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MENU"/>
+                                <connections>
+                                    <action selector="GradesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLA-bY-Px0"/>
+                                    <action selector="HomePresed:" destination="AEV-aS-vkr" eventType="touchUpInside" id="VoY-vL-gou"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bOH-Xj-pgP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5xw-9y-dhB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YpL-PI-m3A" firstAttribute="top" secondItem="5xw-9y-dhB" secondAttribute="top" constant="40" id="Hug-gu-9GE"/>
+                            <constraint firstItem="YpL-PI-m3A" firstAttribute="leading" secondItem="5xw-9y-dhB" secondAttribute="leading" constant="40" id="qa5-7Q-WPN"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="KJd-ze-Fw1"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1w-dI-pxy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="AEV-aS-vkr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="81.696428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aYb-Ex-7wU">
+            <objects>
+                <viewController id="4mS-Zn-651" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gbf-Ua-AEN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ATTENDANCE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ars-fg-aRn">
+                                <rect key="frame" x="40" y="40" width="109" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uam-LK-cWN">
+                                <rect key="frame" x="40" y="760" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MENU"/>
+                                <connections>
+                                    <action selector="GradesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V00-kF-J2R"/>
+                                    <action selector="Home2Pressed:" destination="Aom-ma-46Y" eventType="touchUpInside" id="j3c-HU-wzM"/>
+                                    <action selector="HomePresed:" destination="AEV-aS-vkr" eventType="touchUpInside" id="tc7-pT-AEM"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Xtv-63-Pmq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p6r-O0-7G4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ars-fg-aRn" firstAttribute="leading" secondItem="p6r-O0-7G4" secondAttribute="leading" constant="40" id="Pdc-bM-Kef"/>
+                            <constraint firstItem="ars-fg-aRn" firstAttribute="top" secondItem="p6r-O0-7G4" secondAttribute="top" constant="40" id="pnv-na-zAG"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ps0-OT-zfI"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2N-cT-XDU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Aom-ma-46Y" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1595.6521739130435" y="81.696428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5f7-No-A7K">
+            <objects>
+                <viewController id="jJx-7H-fAc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xgd-ev-FIa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okr-7f-wpd">
+                                <rect key="frame" x="20" y="44" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY 8 DAY SCHEDULE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-yC-8ir">
+                                <rect key="frame" x="40" y="40" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdm-HV-yP0">
+                                <rect key="frame" x="40" y="760" width="76" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="MENU"/>
+                                <connections>
+                                    <action selector="GradesPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="44f-8v-noI"/>
+                                    <action selector="Home2Pressed:" destination="Aom-ma-46Y" eventType="touchUpInside" id="q78-xx-xQF"/>
+                                    <action selector="Home3Pressed:" destination="McC-DE-sev" eventType="touchUpInside" id="7vc-Aq-DVa"/>
+                                    <action selector="HomePresed:" destination="AEV-aS-vkr" eventType="touchUpInside" id="19t-tZ-elo"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Hr7-eQ-OHP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ntF-8d-LKI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pdz-yC-8ir" firstAttribute="leading" secondItem="ntF-8d-LKI" secondAttribute="leading" constant="40" id="3bA-ip-WFc"/>
+                            <constraint firstItem="pdz-yC-8ir" firstAttribute="top" secondItem="ntF-8d-LKI" secondAttribute="top" constant="40" id="96z-c7-i0q"/>
+                            <constraint firstItem="ntF-8d-LKI" firstAttribute="top" secondItem="pdz-yC-8ir" secondAttribute="top" priority="1" id="zMJ-Zo-Aty"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Z7u-cN-2sD"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dnS-Lz-POU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="McC-DE-sev" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2362" y="82"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bOH-Xj-pgP"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
