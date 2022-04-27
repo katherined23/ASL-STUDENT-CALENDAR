@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  scheduleScreen
+//  Monthly page
 //
-//  Created by Alexandros Roche on 19/04/2022.
+//  Created by Alexandros Roche on 16/02/2022.
 //
 
 import UIKit

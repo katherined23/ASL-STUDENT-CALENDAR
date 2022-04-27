@@ -1,120 +1,137 @@
 //
 //  ViewController.swift
-//  scheduleScreen
+//  Monthly page
 //
-//  Created by Alexandros Roche on 19/04/2022.
+//  Created by Alexandros Roche on 16/02/2022.
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var monthLabel: UILabel!
+    @IBOutlet var collectionView: UICollectionView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        let center = UNUserNotificationCenter.current()
+        
+        center.requestAuthorization(options: [.alert, .sound])
+            { (permissionGranted, error) in
+        }
+            print("Success.")
     }
     
-    var check = false
-    
-    let studentEmails = ["Charlotte_Cooper@asl.org",
-                         
-                         "Marion_Jones@asl.org",
-                         
-                         "Alex_Okpoyo@asl.org",
-
-                         "Andrew_Okpoyo@asl.org",
-
-                         "Laurence_Doherty@asl.org",
-
-                         "Raymond_Basset@asl.org",
-
-                         "Jean_Collas@asl.org",
-
-                         "Karl_Staaf@asl.org",
-
-                         "Nicola_Adams@asl.org",
-
-                         "Jenny_Thompson@asl.org",
-
-                         "Isabell_Werth@asl.org",
-
-                         "Dara_Torres@asl.org",
-
-                         "Ray_Ewry@asl.org",
-
-                         "Natalie_Coughlin@asl.org",
-
-                         "Alexei_Nemov@asl.org",
-
-                         "Amanda_Beard@asl.org",
-
-                         "Simona_Amanar@asl.org",
-
-                         "Nelli_Kim@asl.org",
-
-                         "Ralph_Rose@asl.org",
-
-                         "Shane_Gould@asl.org"]
-    
-    let arrayID = ["98620",
-                   
-                   "106261",
-                   
-                   "105114",
-                   
-                   "105115",
-                   
-                   "81800",
-                   
-                   "107458",
-                   
-                   "78239",
-                   
-                   "105195",
-                   
-                   "80672",
-                   
-                   "55795",
-                   
-                   "1427",
-                   
-                   "97630",
-                   
-                   "77477",
-                   
-                   "72521",
-                   
-                   "110300",
-                   
-                   "64478",
-                   
-                   "98878",
-                   
-                   "93508",
-                   
-                   "64733",
-                   
-                   "1191"]
+        
+//        let content = UNMutableNotificationContent()
+//        content.title = "Notification"
+//        content.body = "Your event is five minutes away"
+//
+//        let date = Date().addingTimeInterval(5)
+//
+//        let dateComponents = Calendar.current.dateComponents([.year, .month, .day, .hour, .minute, .second], from: date)
+//
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+//
+//        let uuidString = UUID().uuidString
+//        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: trigger)
     
     
-    @IBOutlet var usernameField: UITextField!
+    var selectedDate = Date()
+    var totalSqaures = [String]()
+
+    func setCellsView()
+    {
+        let width = (collectionView.frame.size.width - 2) / 8
+        let height = (collectionView.frame.size.height - 2) / 8
+
+        let flowLayout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        flowLayout.itemSize = CGSize(width: width, height: height)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        totalSqaures.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
+
+        cell.dayOfMonth.text = totalSqaures[indexPath.item]
+        
+        return cell
+    }
     
-        @IBAction func searchButton(_ sender: UIButton) {
-            let usernameText: String = usernameField.text!
-            print(usernameText)
-                        
-            check = studentEmails.contains(usernameText)
-            
-            for email in studentEmails {
-                if check == true {
-                    let i = email.count
-                    let studentID = arrayID[i-1]
-                    print("Hi")
-                    print(studentID)
-                    if check != true {
-                        print("Error")
-                }
+    var i = 12
+    
+    @IBOutlet weak var monthTitle: UILabel!
+    @IBOutlet weak var rangeErrorMessage: UILabel!
+    @IBOutlet weak var lastDayStack: UIStackView!
+    @IBAction func backMonthButton(_ sender: UIButton) {
+        rangeErrorMessage.alpha = 0
+        lastDayStack.alpha = 1
+        sender.alpha = 1
+        let arrayMonth = ["January 2021", "February 2021", "March 2021", "April 2021", "May 2021", "June 2021", "July 2021", "August 2021", "September 2021", "October 2021", "November 2021", "December 2021", "January 2022", "February 2022", "March 2022", "April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022"]
+        
+        i = i - 1
+        monthTitle.text = arrayMonth[i]
+        
+        if arrayMonth[i] == "February 2021" {
+            lastDayStack.alpha = 0
+        }
+        
+        if arrayMonth[i] == "February 2022" {
+            lastDayStack.alpha = 0
+        }
+        
+        if i == 0 {
+            rangeErrorMessage.alpha = 1
+            rangeErrorMessage.text = "Remain in month range by clicking the forward button"
+            sender.alpha = 0
+            i = i + 1
+            if i == 1 {
+                sender.alpha = 1
             }
         }
+        
+    }
+    
+    @IBAction func forwardMonthButton(_ sender: UIButton) {
+        rangeErrorMessage.alpha = 0
+        lastDayStack.alpha = 1
+        sender.alpha = 1
+        let arrayMonthForward = ["January 2021", "February 2021", "March 2021", "April 2021", "May 2021", "June 2021", "July 2021", "August 2021", "September 2021", "October 2021", "November 2021", "December 2021", "January 2022", "February 2022", "March 2022", "April 2022", "May 2022", "June 2022", "July 2022", "August 2022", "September 2022", "October 2022", "November 2022", "December 2022"]
+        
+        i = i + 1
+        monthTitle.text = arrayMonthForward[i]
+        
+        if arrayMonthForward[i] == "February 2021" {
+            lastDayStack.alpha = 0
         }
+        
+        if arrayMonthForward[i] == "February 2022" {
+            lastDayStack.alpha = 0
+        }
+        
+        if i == 23 {
+            rangeErrorMessage.alpha = 1
+            rangeErrorMessage.text = "Remain in month range by clicking the backward button"
+            sender.alpha = 0
+            i = i - 1
+            if i == 22 {
+                sender.alpha = 1
+            }
+        }
+    }
+
+    @IBAction func previousMonth(_ sender: Any) {
+
+    }
+
+    @IBAction func nextMonth(_ sender: Any) {
+        
+    }
+
 }
