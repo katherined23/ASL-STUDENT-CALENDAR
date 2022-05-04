@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF372C7E281D99B800FD0E32 /* ASL_calendar_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C7D281D99B800FD0E32 /* ASL_calendar_appTests.swift */; };
+		CF372C88281D99B800FD0E32 /* ASL_calendar_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C87281D99B800FD0E32 /* ASL_calendar_appUITests.swift */; };
+		CF372C8A281D99B800FD0E32 /* ASL_calendar_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C89281D99B800FD0E32 /* ASL_calendar_appUITestsLaunchTests.swift */; };
+		CF372CAE281D9A0100FD0E32 /* DailyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C97281D9A0100FD0E32 /* DailyCell.swift */; };
+		CF372CAF281D9A0100FD0E32 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C98281D9A0100FD0E32 /* Event.swift */; };
+		CF372CB0281D9A0100FD0E32 /* CalendarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C99281D9A0100FD0E32 /* CalendarHelper.swift */; };
+		CF372CB1281D9A0100FD0E32 /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372C9A281D9A0100FD0E32 /* EventEditViewController.swift */; };
+		CF372CB5281D9A0100FD0E32 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372CA0281D9A0100FD0E32 /* DailyViewController.swift */; };
+		CF372CB6281D9A0100FD0E32 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372CA4281D9A0100FD0E32 /* MenuViewController.swift */; };
+		CF372CC8281D9BB900FD0E32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372CC7281D9BB900FD0E32 /* ViewController.swift */; };
+		CF372CCA281D9BCA00FD0E32 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372CC9281D9BCA00FD0E32 /* SceneDelegate.swift */; };
+		CF372CCC281D9BD300FD0E32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF372CCB281D9BD200FD0E32 /* AppDelegate.swift */; };
+		CF372CD3281D9BE000FD0E32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF372CCE281D9BE000FD0E32 /* LaunchScreen.storyboard */; };
+		CF372CD4281D9BE000FD0E32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF372CD0281D9BE000FD0E32 /* Main.storyboard */; };
+		CF372CD5281D9BE000FD0E32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF372CD2281D9BE000FD0E32 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF372C7A281D99B800FD0E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF372C5B281D99B600FD0E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF372C62281D99B600FD0E32;
+			remoteInfo = "ASL calendar app";
+		};
+		CF372C84281D99B800FD0E32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF372C5B281D99B600FD0E32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF372C62281D99B600FD0E32;
+			remoteInfo = "ASL calendar app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF372C63281D99B600FD0E32 /* ASL calendar app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ASL calendar app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF372C72281D99B800FD0E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF372C74281D99B800FD0E32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF372C79281D99B800FD0E32 /* ASL calendar appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASL calendar appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF372C7D281D99B800FD0E32 /* ASL_calendar_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASL_calendar_appTests.swift; sourceTree = "<group>"; };
+		CF372C83281D99B800FD0E32 /* ASL calendar appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ASL calendar appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF372C87281D99B800FD0E32 /* ASL_calendar_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASL_calendar_appUITests.swift; sourceTree = "<group>"; };
+		CF372C89281D99B800FD0E32 /* ASL_calendar_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASL_calendar_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF372C97281D9A0100FD0E32 /* DailyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCell.swift; sourceTree = "<group>"; };
+		CF372C98281D9A0100FD0E32 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		CF372C99281D9A0100FD0E32 /* CalendarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarHelper.swift; sourceTree = "<group>"; };
+		CF372C9A281D9A0100FD0E32 /* EventEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
+		CF372CA0281D9A0100FD0E32 /* DailyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		CF372CA4281D9A0100FD0E32 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CF372CC7281D9BB900FD0E32 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF372CC9281D9BCA00FD0E32 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../../Downloads/ASL-STUDENT-CALENDAR-main 4/loginTwo/SceneDelegate.swift"; sourceTree = "<group>"; };
+		CF372CCB281D9BD200FD0E32 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../../../Downloads/ASL-STUDENT-CALENDAR-main 4/loginTwo/AppDelegate.swift"; sourceTree = "<group>"; };
+		CF372CCF281D9BE000FD0E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF372CD1281D9BE000FD0E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		CF372CD2281D9BE000FD0E32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/ASL-STUDENT-CALENDAR-main 4/loginTwo/Assets.xcassets"; sourceTree = "<group>"; };
+		CF372CD7281D9C4B00FD0E32 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../Downloads/ASL-STUDENT-CALENDAR-main 4/loginTwo/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF372C60281D99B600FD0E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C76281D99B800FD0E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C80281D99B800FD0E32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF372C5A281D99B600FD0E32 = {
+			isa = PBXGroup;
+			children = (
+				CF372C65281D99B600FD0E32 /* ASL calendar app */,
+				CF372C7C281D99B800FD0E32 /* ASL calendar appTests */,
+				CF372C86281D99B800FD0E32 /* ASL calendar appUITests */,
+				CF372C64281D99B600FD0E32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF372C64281D99B600FD0E32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF372C63281D99B600FD0E32 /* ASL calendar app.app */,
+				CF372C79281D99B800FD0E32 /* ASL calendar appTests.xctest */,
+				CF372C83281D99B800FD0E32 /* ASL calendar appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF372C65281D99B600FD0E32 /* ASL calendar app */ = {
+			isa = PBXGroup;
+			children = (
+				CF372CCB281D9BD200FD0E32 /* AppDelegate.swift */,
+				CF372CC9281D9BCA00FD0E32 /* SceneDelegate.swift */,
+				CF372CD2281D9BE000FD0E32 /* Assets.xcassets */,
+				CF372CCD281D9BE000FD0E32 /* Base.lproj */,
+				CF372C96281D9A0100FD0E32 /* AppDelegate.swift */,
+				CF372CD6281D9C4B00FD0E32 /* Main.storyboard */,
+				CF372C71281D99B800FD0E32 /* LaunchScreen.storyboard */,
+				CF372C74281D99B800FD0E32 /* Info.plist */,
+			);
+			path = "ASL calendar app";
+			sourceTree = "<group>";
+		};
+		CF372C7C281D99B800FD0E32 /* ASL calendar appTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF372C7D281D99B800FD0E32 /* ASL_calendar_appTests.swift */,
+			);
+			path = "ASL calendar appTests";
+			sourceTree = "<group>";
+		};
+		CF372C86281D99B800FD0E32 /* ASL calendar appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF372C87281D99B800FD0E32 /* ASL_calendar_appUITests.swift */,
+				CF372C89281D99B800FD0E32 /* ASL_calendar_appUITestsLaunchTests.swift */,
+			);
+			path = "ASL calendar appUITests";
+			sourceTree = "<group>";
+		};
+		CF372C96281D9A0100FD0E32 /* AppDelegate.swift */ = {
+			isa = PBXGroup;
+			children = (
+				CF372CC7281D9BB900FD0E32 /* ViewController.swift */,
+				CF372CA4281D9A0100FD0E32 /* MenuViewController.swift */,
+				CF372CA0281D9A0100FD0E32 /* DailyViewController.swift */,
+				CF372C97281D9A0100FD0E32 /* DailyCell.swift */,
+				CF372C98281D9A0100FD0E32 /* Event.swift */,
+				CF372C9A281D9A0100FD0E32 /* EventEditViewController.swift */,
+				CF372C99281D9A0100FD0E32 /* CalendarHelper.swift */,
+			);
+			name = AppDelegate.swift;
+			path = "../../ASL Student Calendar/AppDelegate.swift";
+			sourceTree = "<group>";
+		};
+		CF372CCD281D9BE000FD0E32 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				CF372CCE281D9BE000FD0E32 /* LaunchScreen.storyboard */,
+				CF372CD0281D9BE000FD0E32 /* Main.storyboard */,
+			);
+			name = Base.lproj;
+			path = "../../../../Downloads/ASL-STUDENT-CALENDAR-main 4/loginTwo/Base.lproj";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF372C62281D99B600FD0E32 /* ASL calendar app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF372C8D281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar app" */;
+			buildPhases = (
+				CF372C5F281D99B600FD0E32 /* Sources */,
+				CF372C60281D99B600FD0E32 /* Frameworks */,
+				CF372C61281D99B600FD0E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ASL calendar app";
+			productName = "ASL calendar app";
+			productReference = CF372C63281D99B600FD0E32 /* ASL calendar app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF372C78281D99B800FD0E32 /* ASL calendar appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF372C90281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar appTests" */;
+			buildPhases = (
+				CF372C75281D99B800FD0E32 /* Sources */,
+				CF372C76281D99B800FD0E32 /* Frameworks */,
+				CF372C77281D99B800FD0E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF372C7B281D99B800FD0E32 /* PBXTargetDependency */,
+			);
+			name = "ASL calendar appTests";
+			productName = "ASL calendar appTests";
+			productReference = CF372C79281D99B800FD0E32 /* ASL calendar appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF372C82281D99B800FD0E32 /* ASL calendar appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF372C93281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar appUITests" */;
+			buildPhases = (
+				CF372C7F281D99B800FD0E32 /* Sources */,
+				CF372C80281D99B800FD0E32 /* Frameworks */,
+				CF372C81281D99B800FD0E32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF372C85281D99B800FD0E32 /* PBXTargetDependency */,
+			);
+			name = "ASL calendar appUITests";
+			productName = "ASL calendar appUITests";
+			productReference = CF372C83281D99B800FD0E32 /* ASL calendar appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF372C5B281D99B600FD0E32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					CF372C62281D99B600FD0E32 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					CF372C78281D99B800FD0E32 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CF372C62281D99B600FD0E32;
+					};
+					CF372C82281D99B800FD0E32 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = CF372C62281D99B600FD0E32;
+					};
+				};
+			};
+			buildConfigurationList = CF372C5E281D99B600FD0E32 /* Build configuration list for PBXProject "ASL calendar app" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF372C5A281D99B600FD0E32;
+			productRefGroup = CF372C64281D99B600FD0E32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF372C62281D99B600FD0E32 /* ASL calendar app */,
+				CF372C78281D99B800FD0E32 /* ASL calendar appTests */,
+				CF372C82281D99B800FD0E32 /* ASL calendar appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF372C61281D99B600FD0E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF372CD4281D9BE000FD0E32 /* Main.storyboard in Resources */,
+				CF372CD5281D9BE000FD0E32 /* Assets.xcassets in Resources */,
+				CF372CD3281D9BE000FD0E32 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C77281D99B800FD0E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C81281D99B800FD0E32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF372C5F281D99B600FD0E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF372CCC281D9BD300FD0E32 /* AppDelegate.swift in Sources */,
+				CF372CC8281D9BB900FD0E32 /* ViewController.swift in Sources */,
+				CF372CB1281D9A0100FD0E32 /* EventEditViewController.swift in Sources */,
+				CF372CB5281D9A0100FD0E32 /* DailyViewController.swift in Sources */,
+				CF372CB0281D9A0100FD0E32 /* CalendarHelper.swift in Sources */,
+				CF372CAE281D9A0100FD0E32 /* DailyCell.swift in Sources */,
+				CF372CCA281D9BCA00FD0E32 /* SceneDelegate.swift in Sources */,
+				CF372CB6281D9A0100FD0E32 /* MenuViewController.swift in Sources */,
+				CF372CAF281D9A0100FD0E32 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C75281D99B800FD0E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF372C7E281D99B800FD0E32 /* ASL_calendar_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF372C7F281D99B800FD0E32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF372C88281D99B800FD0E32 /* ASL_calendar_appUITests.swift in Sources */,
+				CF372C8A281D99B800FD0E32 /* ASL_calendar_appUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF372C7B281D99B800FD0E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF372C62281D99B600FD0E32 /* ASL calendar app */;
+			targetProxy = CF372C7A281D99B800FD0E32 /* PBXContainerItemProxy */;
+		};
+		CF372C85281D99B800FD0E32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF372C62281D99B600FD0E32 /* ASL calendar app */;
+			targetProxy = CF372C84281D99B800FD0E32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF372C71281D99B800FD0E32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF372C72281D99B800FD0E32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF372CCE281D9BE000FD0E32 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF372CCF281D9BE000FD0E32 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CF372CD0281D9BE000FD0E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF372CD1281D9BE000FD0E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF372CD6281D9C4B00FD0E32 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF372CD7281D9C4B00FD0E32 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF372C8B281D99B800FD0E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF372C8C281D99B800FD0E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF372C8E281D99B800FD0E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASL calendar app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF372C8F281D99B800FD0E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ASL calendar app/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CF372C91281D99B800FD0E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASL calendar app.app/ASL calendar app";
+			};
+			name = Debug;
+		};
+		CF372C92281D99B800FD0E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ASL calendar app.app/ASL calendar app";
+			};
+			name = Release;
+		};
+		CF372C94281D99B800FD0E32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ASL calendar app";
+			};
+			name = Debug;
+		};
+		CF372C95281D99B800FD0E32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YZE9PE2JUN;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.katherinedemetris.ASL-calendar-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ASL calendar app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF372C5E281D99B600FD0E32 /* Build configuration list for PBXProject "ASL calendar app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF372C8B281D99B800FD0E32 /* Debug */,
+				CF372C8C281D99B800FD0E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF372C8D281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF372C8E281D99B800FD0E32 /* Debug */,
+				CF372C8F281D99B800FD0E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF372C90281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF372C91281D99B800FD0E32 /* Debug */,
+				CF372C92281D99B800FD0E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF372C93281D99B800FD0E32 /* Build configuration list for PBXNativeTarget "ASL calendar appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF372C94281D99B800FD0E32 /* Debug */,
+				CF372C95281D99B800FD0E32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF372C5B281D99B600FD0E32 /* Project object */;
+}
